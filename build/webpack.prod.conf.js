@@ -6,6 +6,9 @@ const merge = require('webpack-merge'),
   UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 const webpackConfig = merge(baseWebpackConfig, {
+  output: {
+    filename: 'js/[name]-[hash].min.js'
+  },
   module: {
     rules: [
       {
@@ -35,7 +38,7 @@ const webpackConfig = merge(baseWebpackConfig, {
   },
   plugins: [
     new ExtractTextPlugin({
-      filename: '[name]-[hash].min.css',
+      filename: 'css/[name]-[hash].min.css',
       allChunks: true
     }),
     new UglifyJsPlugin({
