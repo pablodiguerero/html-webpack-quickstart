@@ -52,13 +52,18 @@ module.exports = {
   ],
   module: {
     loaders: [
-      {test: /\.(ttf|eot|woff|woff2|svg)(\?.*$|$)/, loader: "file-loader"},
+      {
+        test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/,
+        loader: "file-loader",
+        options: {
+          name: assetsPath('fonts/[name].[hash:7].[ext]')
+        }
+      },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
-        loader: 'url-loader',
+        loader: "file-loader",
         options: {
-          limit: 10000,
-          name: assetsPath('img/[name].[hash:7].[ext]')
+          name: assetsPath('fonts/[name].[hash:7].[ext]')
         }
       }
     ]
