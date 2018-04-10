@@ -7,10 +7,10 @@ const merge = require('webpack-merge'),
 
 const webpackConfig = merge(baseWebpackConfig, {
   output: {
-    filename: 'js/[name]-[hash].min.js'
+    filename: '[name]-[hash].min.js'
   },
   module: {
-    rules: [
+    loaders: [
       {
         test: /\.css$/,
         use: ExtractTextPlugin.extract({
@@ -38,7 +38,7 @@ const webpackConfig = merge(baseWebpackConfig, {
   },
   plugins: [
     new ExtractTextPlugin({
-      filename: 'css/[name]-[hash].min.css',
+      filename: '[name]-[hash].min.css',
       allChunks: true
     }),
     new UglifyJsPlugin({

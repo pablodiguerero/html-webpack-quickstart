@@ -6,7 +6,7 @@ const merge = require('webpack-merge'),
 
 const webpackConfig = merge(baseWebpackConfig, {
   module: {
-    rules: [
+    loaders: [
       {
         test: /\.css$/,
         use: ExtractTextPlugin.extract({
