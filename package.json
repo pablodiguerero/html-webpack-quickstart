@@ -17,7 +17,7 @@
       "win32": "npm run remove_dist_win && webpack --config build/webpack.prod.conf.js  --bail"
     },
     "remove_dist_unix": "rm -rf ./dist",
-    "remove_dist_win": "rd /s /q \"./dist\"",
+    "remove_dist_win": "del /s /q /f \"./dist\"",
     "start": "npm run dev"
   },
   "dependencies": {},
