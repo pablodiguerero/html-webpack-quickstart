@@ -20,7 +20,7 @@ function toObject (paths) {
 module.exports = {
   assetsPublicPath: '/',
   assetsRoot: path.resolve(__dirname, '../dist'),
-  assetsSubDirectory: 'files',
+  assetsSubDirectory: 'assets',
   chunks: toObject(glob.sync('./src/chunks/*.js')),
   excludeChunks: {
 

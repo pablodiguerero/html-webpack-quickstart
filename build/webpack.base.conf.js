@@ -53,7 +53,7 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/,
+        test: /fonts\/*\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/,
         loader: "file-loader",
         options: {
           name: assetsPath('fonts/[name].[hash:7].[ext]')
@@ -63,7 +63,7 @@ module.exports = {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
         loader: "file-loader",
         options: {
-          name: assetsPath('fonts/[name].[hash:7].[ext]')
+          name: assetsPath('img/[name].[hash:7].[ext]')
         }
       }
     ]
