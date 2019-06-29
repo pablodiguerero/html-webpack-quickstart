@@ -1,0 +1,13 @@
+@import "mixins";
+
+.d-retina-none {
+  @include screen-retina() {
+    display: none!important;
+  }
+}
+
+.d-retina-block {
+  @include screen-retina {
+    display: block!important;
+  }
+}
