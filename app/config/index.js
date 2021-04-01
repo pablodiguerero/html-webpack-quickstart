@@ -1,14 +1,14 @@
 'use strict';
 
-const path = require('path'),
-  glob = require('glob');
+const path = require('path');
+const glob = require('glob');
 
 function toObject (paths) {
   const list = {};
 
   paths.forEach(path => {
-    const name = path.split('/').slice(-1)[0],
-      filename = name.split('.');
+    const name = path.split('/').slice(-1)[0];
+    const filename = name.split('.');
 
     filename.splice(-1,1);
     list[filename.join('.')] = path;
@@ -22,7 +22,5 @@ module.exports = {
   assetsRoot: path.resolve(__dirname, '../dist'),
   assetsSubDirectory: 'assets',
   chunks: toObject(glob.sync('./src/chunks/*.js')),
-  excludeChunks: {
-
-  }
+  excludeChunks: { }
 };

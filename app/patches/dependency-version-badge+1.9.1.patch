@@ -1,0 +1,11 @@
+--- a/node_modules/dependency-version-badge/src/utils.js
++++ b/node_modules/dependency-version-badge/src/utils.js
+@@ -242,7 +242,7 @@
+ 
+       debug('current dependency version %s@%s', name, currentVersion)
+ 
+-      const readmeFilename = path.join(process.cwd(), 'README.md')
++      const readmeFilename = path.join(process.cwd(), '..', 'README.md')
+       const readmeText = fs.readFileSync(readmeFilename, 'utf8')
+       const usedIn = parseGitHubRepo(from)
+ 

@@ -1,0 +1,4 @@
+.git/
+.blackbox/
+.vscode/
+app/node_modules

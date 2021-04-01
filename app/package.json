@@ -1,0 +1,41 @@
+{
+  "name": "html-webpack-quickstart",
+  "version": "1.0.0",
+  "description": "HTML Webpack Quickstart",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:pablodiguerero/html-webpack-quickstart.git"
+  },
+  "license": "MIT",
+  "author": "Pavel Ivanov <pablodiguerero@gmail.com>",
+  "scripts": {
+    "serve": "webpack-cli serve --stats-children --config=build/webpack.base.conf.js",
+    "build": "webpack-cli build --config=build/webpack.prod.conf.js",
+    "start": "npm run serve",
+    "postinstall": "patch-package"
+  },
+  "devDependencies": {
+    "css-loader": "^5.2.0",
+    "css-minimizer-webpack-plugin": "^1.3.0",
+    "dependency-version-badge": "^1.9.1",
+    "eslint": "^7.23.0",
+    "file-loader": "^6.2.0",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.4.0",
+    "patch-package": "^6.4.7",
+    "pug-html-loader": "^1.1.5",
+    "pug-loader": "^2.4.0",
+    "sass": "^1.32.8",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "terser-webpack-plugin": "^5.1.1",
+    "webpack": "^5.20.0",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3"
+  },
+  "dependencies": {
+    "bootstrap": "4.6.0"
+  }
+}
