@@ -16,9 +16,9 @@
   },
   "devDependencies": {
     "css-loader": "^5.2.0",
-    "css-minimizer-webpack-plugin": "^1.3.0",
+    "css-minimizer-webpack-plugin": "^7.0.2",
     "dependency-version-badge": "^1.9.1",
-    "eslint": "^7.23.0",
+    "eslint": "^9.39.1",
     "file-loader": "^6.2.0",
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.1",
